@@ -23,8 +23,8 @@ class Ship {
             this.x - this.r * (Math.cos(this.a) - Math.sin(this.a)),
             this.y + this.r * (Math.sin(this.a) + Math.cos(this.a))
         ); // rear right
-        ctx.closePath();
 
+        ctx.closePath(); // cheat and close it without actually telling it where to draw
         ctx.stroke();
     }
 }
